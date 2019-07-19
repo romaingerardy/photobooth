@@ -29,6 +29,12 @@ QPushButton:pressed {
 
 /* Idle Screen */
 
+QFrame#IdleLogo {
+    background-image: url(photobooth/gui/Qt5Gui/images/pmb-logo.png);
+    background-repeat: no-repeat;
+    padding: 80px 400px 120px 80px;
+}
+
 QFrame#IdleMessage {
     background-image: url(photobooth/gui/Qt5Gui/images/arrow-1024x600.png);
     background-repeat: no-repeat;

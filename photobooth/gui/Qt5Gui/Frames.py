@@ -82,6 +82,7 @@ class IdleMessage(QtWidgets.QFrame):
     def __init__(self, trigger_action):
 
         super().__init__()
+        self.setObjectName('IdleLogo')
         self.setObjectName('IdleMessage')
 
         self._message_label = _('Hit the')
