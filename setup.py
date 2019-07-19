@@ -184,7 +184,7 @@ setup(
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
     install_requires=[
-        'opencv-python',
+        #'opencv-python',  error in install => use apt-get install opencv-python
         'Pillow',
         'gpiozero',
         'gphoto2',
