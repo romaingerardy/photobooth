@@ -76,7 +76,7 @@ class Welcome(QtWidgets.QFrame):
         lay.addWidget(title)
         lay.addLayout(btnLay)
         lay.addLayout(btnLay2)
-        //lay.addWidget(link)
+        #lay.addWidget(link)
         self.setLayout(lay)
 
 
