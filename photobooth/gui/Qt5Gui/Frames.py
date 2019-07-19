@@ -61,9 +61,11 @@ class Welcome(QtWidgets.QFrame):
 
         btnLay = QtWidgets.QHBoxLayout()
         btnLay.addWidget(btnStart)
-        btnLay.addWidget(btnSetDate)
-        btnLay.addWidget(btnSettings)
         btnLay.addWidget(btnQuit)
+
+        btnLay2 = QtWidgets.QHBoxLayout()
+        btnLay2.addWidget(btnSetDate)
+        btnLay2.addWidget(btnSettings)
 
         title = QtWidgets.QLabel(_('photobooth'))
 
@@ -73,7 +75,8 @@ class Welcome(QtWidgets.QFrame):
         lay = QtWidgets.QVBoxLayout()
         lay.addWidget(title)
         lay.addLayout(btnLay)
-        lay.addWidget(link)
+        lay.addLayout(btnLay2)
+        //lay.addWidget(link)
         self.setLayout(lay)
 
 
@@ -82,8 +85,12 @@ class IdleMessage(QtWidgets.QFrame):
     def __init__(self, trigger_action):
 
         super().__init__()
-        self.setObjectName('IdleLogo')
         self.setObjectName('IdleMessage')
+
+        label = QLabel(self)
+        pixmap = QPixmap('images/pmb-logo.png')
+        label.setPixmap(pixmap)
+
 
         self._message_label = _('Hit the')
         self._message_button = _('Button!')
