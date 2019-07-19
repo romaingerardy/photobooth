@@ -74,9 +74,11 @@ class Welcome(QtWidgets.QFrame):
         btnLay.addWidget(btnQuit)
 
         btnLay2 = QtWidgets.QHBoxLayout()
+        btnLay2.addWidget(empty)
         btnLay2.addWidget(btnSetDate)
         btnLay2.addWidget(empty)
         btnLay2.addWidget(btnSettings)
+        btnLay2.addWidget(empty)
 
         title = QtWidgets.QLabel(_('photobooth'))
 
