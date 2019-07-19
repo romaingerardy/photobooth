@@ -83,10 +83,10 @@ class Welcome(QtWidgets.QFrame):
         lay = QtWidgets.QVBoxLayout()
         lay.addWidget(label)
         #lay.addWidget(title)
+        lay.addWidget(empty)
         lay.addLayout(btnLay)
         lay.addLayout(btnLay2)
         #lay.addWidget(link)
-        lay.addWidget(empty)
         lay.addWidget(empty)
         self.setLayout(lay)
 
