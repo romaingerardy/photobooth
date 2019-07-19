@@ -47,6 +47,10 @@ class Welcome(QtWidgets.QFrame):
     def initFrame(self, start_action, set_date_action, settings_action,
                   exit_action):
 
+        label = QLabel(self)
+        pixmap = QPixmap('images/pmb-logo.png')
+        label.setPixmap(pixmap)
+
         btnStart = QtWidgets.QPushButton(_('Start photobooth'))
         btnStart.clicked.connect(start_action)
 
@@ -73,6 +77,7 @@ class Welcome(QtWidgets.QFrame):
         link = QtWidgets.QLabel('<a href="{0}">{0}</a>'.format(url))
 
         lay = QtWidgets.QVBoxLayout()
+        lay.addWidget(label)
         lay.addWidget(title)
         lay.addLayout(btnLay)
         lay.addLayout(btnLay2)
@@ -87,9 +92,7 @@ class IdleMessage(QtWidgets.QFrame):
         super().__init__()
         self.setObjectName('IdleMessage')
 
-        label = QLabel(self)
-        pixmap = QPixmap('images/pmb-logo.png')
-        label.setPixmap(pixmap)
+
 
 
         self._message_label = _('Hit the')
