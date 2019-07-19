@@ -50,7 +50,7 @@ class Welcome(QtWidgets.QFrame):
 
         label = QtWidgets.QLabel()
         label.setObjectName('pmb-logo')
-        pixmap = QPixmap('photobooth/gui/Qt5Gui/images/pmb-logo.png')
+        pixmap = QPixmap('photobooth/gui/Qt5Gui/images/pmb-logo-400x110.png')
         pixmap = pixmap.scaled(400,110)
         label.setPixmap(pixmap)
 
