@@ -66,16 +66,19 @@ class Welcome(QtWidgets.QFrame):
         btnQuit = QtWidgets.QPushButton(_('Quit'))
         btnQuit.clicked.connect(exit_action)
 
+        empty = QtWidgets.QLabel()
+
         btnLay = QtWidgets.QHBoxLayout()
         btnLay.addWidget(btnStart)
+        btnLay.addWidget(empty)
         btnLay.addWidget(btnQuit)
 
         btnLay2 = QtWidgets.QHBoxLayout()
         btnLay2.addWidget(btnSetDate)
+        btnLay2.addWidget(empty)
         btnLay2.addWidget(btnSettings)
 
         title = QtWidgets.QLabel(_('photobooth'))
-        empty = QtWidgets.QLabel()
 
         url = 'https://github.com/reuterbal/photobooth'
         link = QtWidgets.QLabel('<a href="{0}">{0}</a>'.format(url))
