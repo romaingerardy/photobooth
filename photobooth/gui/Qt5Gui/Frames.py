@@ -48,7 +48,7 @@ class Welcome(QtWidgets.QFrame):
                   exit_action):
 
         label = QtWidgets.QLabel()
-        pixmap = QtWidgets.QPixmap('images/pmb-logo.png')
+        pixmap = QPixmap('images/pmb-logo.png')
         label.setPixmap(pixmap)
 
         btnStart = QtWidgets.QPushButton(_('Start photobooth'))
