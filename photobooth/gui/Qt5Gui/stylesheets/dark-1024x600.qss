@@ -27,6 +27,10 @@ QPushButton:pressed {
     background-color: #66eeeeee;
 }
 
+QLabel#pmb-logo {
+    qproperty-alignment: AlignCenter;
+}
+
 /* Idle Screen */
 
 QFrame#IdleLogo {
