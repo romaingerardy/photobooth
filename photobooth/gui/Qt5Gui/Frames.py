@@ -75,6 +75,7 @@ class Welcome(QtWidgets.QFrame):
         btnLay2.addWidget(btnSettings)
 
         title = QtWidgets.QLabel(_('photobooth'))
+        empty = QtWidgets.QLabel()
 
         url = 'https://github.com/reuterbal/photobooth'
         link = QtWidgets.QLabel('<a href="{0}">{0}</a>'.format(url))
@@ -85,6 +86,8 @@ class Welcome(QtWidgets.QFrame):
         lay.addLayout(btnLay)
         lay.addLayout(btnLay2)
         #lay.addWidget(link)
+        lay.addWidget(empty)
+        lay.addWidget(empty)
         self.setLayout(lay)
 
 
