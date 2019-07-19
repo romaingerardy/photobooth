@@ -25,6 +25,7 @@ import sys
 from PyQt5 import QtCore
 from PyQt5 import QtGui
 from PyQt5 import QtWidgets
+from PyQt5 import QPixmap
 
 from .. import modules
 from ... import camera
