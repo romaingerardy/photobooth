@@ -51,6 +51,7 @@ class Welcome(QtWidgets.QFrame):
         label = QtWidgets.QLabel()
         pixmap = QPixmap('photobooth/gui/Qt5Gui/images/pmb-logo.png')
         label.setPixmap(pixmap)
+        label.resize(400,110)
 
         btnStart = QtWidgets.QPushButton(_('Start photobooth'))
         btnStart.clicked.connect(start_action)
