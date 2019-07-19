@@ -50,7 +50,7 @@ class Welcome(QtWidgets.QFrame):
 
         label = QtWidgets.QLabel()
         label.setObjectName('pmb-logo')
-        pixmap = QPixmap('photobooth/gui/Qt5Gui/images/pmb-logo-400x110.png')
+        pixmap = QPixmap('photobooth/gui/Qt5Gui/images/pmb-by.png')
         pixmap = pixmap.scaled(400,110)
         label.setPixmap(pixmap)
 
@@ -86,13 +86,14 @@ class Welcome(QtWidgets.QFrame):
         link = QtWidgets.QLabel('<a href="{0}">{0}</a>'.format(url))
 
         lay = QtWidgets.QVBoxLayout()
-        lay.addWidget(label)
         #lay.addWidget(title)
         lay.addWidget(empty)
         lay.addLayout(btnLay)
         lay.addLayout(btnLay2)
         #lay.addWidget(link)
         lay.addWidget(empty)
+        lay.addWidget(label)
+
         self.setLayout(lay)
 
 
