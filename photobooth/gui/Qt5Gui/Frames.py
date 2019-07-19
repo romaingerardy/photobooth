@@ -47,8 +47,8 @@ class Welcome(QtWidgets.QFrame):
     def initFrame(self, start_action, set_date_action, settings_action,
                   exit_action):
 
-        label = QLabel(self)
-        pixmap = QPixmap('images/pmb-logo.png')
+        label = QtWidgets.QLabel()
+        pixmap = QtWidgets.QPixmap('images/pmb-logo.png')
         label.setPixmap(pixmap)
 
         btnStart = QtWidgets.QPushButton(_('Start photobooth'))
